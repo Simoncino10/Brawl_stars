@@ -2,37 +2,25 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Brawl Stats Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Tracker 🏆</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Brawl Tracker 🏆</h1>
-        
-        <div class="input-group">
-            <input type="text" id="playerTag" placeholder="Tag (es. #L99U2PR)" autocomplete="off">
-            <button onclick="getPlayerData()">CERCA</button>
-        </div>
+        <input type="text" id="playerTag" placeholder="Inserisci Tag (es: #V02G0V9V)">
+        <button onclick="getPlayerData()">CERCA</button>
 
-        <div id="result" class="card" style="display:none;">
-            <h2 id="playerName">Nome Giocatore</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span>Attuali</span>
-                    <strong id="currentTrophies">0</strong>
-                </div>
-                <div class="stat-item">
-                    <span>Record</span>
-                    <strong id="highestTrophies">0</strong>
-                </div>
-            </div>
+        <div id="result" style="display:none;">
+            <p>Nome: <span id="playerName"></span></p>
+            <p>Coppe Attuali: <span id="currentTrophies"></span></p>
+            <p>Record: <span id="highestTrophies"></span></p>
             
-            <div class="goal-box">
-                <p>Inserisci Obiettivo Coppe:</p>
-                <input type="number" id="goalInput" placeholder="Esempio: 30000" oninput="calculateGap()">
-                <div id="gapResult" class="gap-text"></div>
-            </div>
+            <hr>
+            <h3>Obiettivo Coppe</h3>
+            <input type="number" id="goalInput" placeholder="Inserisci obiettivo" oninput="calculateGap()">
+            <p id="gapResult"></p>
         </div>
     </div>
     <script src="script.js"></script>
