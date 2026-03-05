@@ -1,2 +1,0 @@
-# Brawl_stars
-test
