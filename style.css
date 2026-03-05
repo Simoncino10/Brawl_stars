@@ -1,81 +1,38 @@
 body {
-    background: #0f0c29;
-    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
-    color: white;
-    font-family: sans-serif;
-    margin: 0;
+    background-color: #1a1a2e;
+    color: #ffcc00;
+    font-family: 'Arial Black', sans-serif;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-
 .container {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+    text-align: center;
     width: 90%;
     max-width: 400px;
-    margin-top: 40px;
-    text-align: center;
 }
-
-h1 { color: #ffcc00; text-shadow: 2px 2px #000; }
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-input {
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid #ffcc00;
-    background: #1a1a1a;
-    color: white;
-    font-size: 16px; /* Evita lo zoom automatico su iPhone */
-}
-
-button {
-    padding: 15px;
-    background: #ffcc00;
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
     border: none;
-    border-radius: 10px;
     font-weight: bold;
-    font-size: 18px;
+}
+button {
+    background: #ffcc00;
     color: #000;
+    cursor: pointer;
 }
-
-.card {
+#result {
+    margin-top: 20px;
     background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.stat-item {
-    background: rgba(0,0,0,0.3);
     padding: 10px;
     border-radius: 10px;
-}
-
-.stat-item span { display: block; font-size: 12px; color: #aaa; }
-.stat-item strong { font-size: 20px; color: #ffcc00; }
-
-.goal-box {
-    margin-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-top: 15px;
-}
-
-.gap-text {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #00ff88;
-    font-size: 1.2rem;
 }
